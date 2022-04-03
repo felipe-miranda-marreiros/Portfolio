@@ -1,0 +1,62 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a,
+li,
+button {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  list-style: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: $white;
+}
+.container {
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.logo {
+  background-color: $white;
+  border: 2px solid $fancy-red-color;
+  box-shadow: -5px 5px rgba(195, 7, 63, 0.877);
+  padding: 0 1rem;
+  z-index: 1;
+  font-family: "Bungee Inline", cursive;
+}
+.logo:hover {
+  color: $fancy-red-color;
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: $fancy-black-color;
+  font-weight: 500;
+  border: 2px solid $fancy-black-color;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.btn:hover {
+  background-color: rgba(195, 7, 63, 0.05);
+  border: 2px solid $fancy-red-color;
+  color: $fancy-red-color;
+}
+h1 {
+  font-size: clamp($fs-200, calc(0.7rem + 0.55vw), $fs-400);
+}
+p {
+  font-size: clamp($fs-200, calc(0.7rem + 0.55vw), $fs-400);
+  line-height: 1.5;
+}

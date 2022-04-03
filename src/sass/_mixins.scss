@@ -1,0 +1,26 @@
+@mixin flex {
+  display: flex;
+  gap: 2rem;
+}
+
+@mixin flex-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-3 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@mixin flex-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
