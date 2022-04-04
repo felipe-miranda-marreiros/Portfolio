@@ -99,7 +99,7 @@ const Contact = () => {
           className="contact-section__form"
           method="POST"
           name="contact-form"
-          netlify
+          netlify="true"
           data-netlify="true"
           action="/pages/success"
           onSubmit={handleSubmit}
