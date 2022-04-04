@@ -1,0 +1,35 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.about-me-section {
+  padding-block: 10rem;
+  color: $fancy-black-color-medium;
+  text-overflow: ellipsis;
+}
+.about-me-section__content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+}
+.about-me-section__content-text {
+  flex: 1;
+  align-self: center;
+}
+.about-me-section__content-text--title {
+  margin-bottom: 1rem;
+}
+.about-me-section__content-img {
+  border: 5px solid $fancy-red-color;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 904px) {
+  .about-me-section__content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .about-me-section__content-text {
+    text-align: justify;
+  }
+}
