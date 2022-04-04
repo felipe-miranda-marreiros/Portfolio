@@ -3,7 +3,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.style.scss";
 
 const Navbar = () => {
-  const navbarLinks = ["Sobre Mim", "Skills", "Projetos", "Contato"];
+  const navbarLinks = [
+    "Sobre Mim",
+    "Skills",
+    "Projetos",
+    "Currículo ",
+    "Contato",
+  ];
   const navBarElements = navbarLinks.map((links, i) => {
     return (
       <li key={i}>
