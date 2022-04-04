@@ -1,0 +1,49 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.skills-section {
+  padding-block: 5rem;
+  background-color: $fancy-black-color;
+  text-overflow: ellipsis;
+}
+.skills-section__content {
+  display: flex;
+  gap: $gap-size-3;
+  .skills-section__content-text,
+  .skills-section__content-img {
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-size-2;
+  }
+}
+
+.skills-section__items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  margin-top: 3rem;
+  border-radius: 5px;
+  img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 904px) {
+  .skills-section__content {
+    flex-direction: column;
+  }
+  .skills-section__content-img {
+    height: auto;
+    order: -1;
+    align-self: center;
+  }
+  .skills-section__items {
+    column-gap: 0.5rem;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
