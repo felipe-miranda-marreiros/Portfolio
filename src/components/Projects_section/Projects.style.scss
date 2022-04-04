@@ -19,7 +19,15 @@
   gap: $gap-size-1;
   justify-self: center;
   position: relative;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 8%);
+  transition: all 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
 }
 .projects-section__content {
   padding: 0.7rem 1rem;
