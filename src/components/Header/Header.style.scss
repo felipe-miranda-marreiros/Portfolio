@@ -1,0 +1,73 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.hero {
+  padding-block: 5rem;
+  @include flex-1;
+  background-color: $fancy-black-color;
+  margin-top: 3rem;
+}
+.hero__content {
+  text-overflow: ellipsis;
+  @include flex;
+  position: relative;
+}
+.hero__content::before {
+  position: absolute;
+  content: "";
+  border-top: 6px solid $fancy-red-color;
+  width: 46%;
+}
+.hero__content::after {
+  position: absolute;
+  content: "";
+  width: 46%;
+  border-bottom: 6px solid $fancy-red-color;
+  padding-bottom: 1rem;
+  right: 0;
+  bottom: 0;
+}
+.hero__content-text {
+  flex: 0 0 50%;
+  @include flex-3;
+  gap: 2rem;
+}
+.hero__content-text--title {
+  margin-top: 1.7rem;
+  font-size: $fs-700;
+  line-height: 1.3;
+  @media only screen and (max-width: 820px) {
+    font-size: clamp(2rem, calc(3rem + 1vw), 3rem);
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: clamp(2rem, calc(3rem + 1vw), 2rem);
+  }
+}
+.hero__content-img {
+  flex: 1;
+}
+.hero__content-text--name {
+  color: $fancy-red-color;
+}
+.hero-btn {
+  border: none;
+  padding: 1rem;
+  max-width: fit-content;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+  font-size: $fs-300;
+  letter-spacing: 0.03em;
+  background-color: $fancy-black-color;
+  outline: 3px solid $fancy-red-color;
+  font-weight: 700;
+}
+.hero-btn:hover {
+  background-color: $fancy-red-color;
+  color: $fancy-black-color;
+}
+@media only screen and (max-width: 904px) {
+  .hero__content {
+    flex-direction: column;
+  }
+}
