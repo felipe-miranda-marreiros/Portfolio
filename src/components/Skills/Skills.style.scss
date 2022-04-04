@@ -17,6 +17,9 @@
     flex-direction: column;
     gap: $gap-size-2;
   }
+  h3 {
+    margin-bottom: 1rem;
+  }
 }
 
 .skills-section__items {

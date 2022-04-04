@@ -14,10 +14,19 @@ const Skills = () => {
               embarcar em uma framework.
             </p>
             <p>
-              Atualmente estou estudando React pelo Scrimba e Udemy. Faço parte
-              também do programa Oracle Next na Alura. Além das tecnologias
-              abaixo, estou estudando Algoritmos e Estrutura de Dados.
+              Atualmente estou estudando React pelo Scrimba e Udemy. Além das
+              tecnologias abaixo, estou estudando Algoritmos e Estrutura de
+              Dados.
             </p>
+            <section>
+              <h3>O futuro</h3>
+              <p>
+                JavaScript é a minha primeira linguagem de programação. Gostei
+                como ela funciona por debaixo dos panos e futuramente espero
+                estudar Node JS e TypeScript. Minha meta é ser FullStack quando
+                tiver mais experiência.
+              </p>
+            </section>
           </section>
           <div className="skills-section__content-img">
             <img src={skills} alt="" />
