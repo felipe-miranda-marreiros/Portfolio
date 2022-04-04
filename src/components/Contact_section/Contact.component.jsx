@@ -33,7 +33,7 @@ const Contact = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...formValues }),
       })
-        .then(() => alert("Success!"))
+        .then(() => alert("Mensagem enviada com sucesso!"))
         .catch((error) => alert(error));
     }
   }, [formErrors]);
