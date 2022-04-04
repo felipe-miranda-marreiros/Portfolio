@@ -7,13 +7,18 @@
 }
 a,
 li,
-button {
+button,
+textarea,
+input {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
   font-family: inherit;
   font-size: inherit;
   list-style: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -54,7 +59,7 @@ body {
   color: $fancy-red-color;
 }
 h1 {
-  font-size: clamp($fs-200, calc(0.7rem + 0.55vw), $fs-400);
+  font-size: clamp(0.1rem, calc(0.7rem + 0.55vw), $fs-400);
 }
 p {
   font-size: clamp($fs-200, calc(0.7rem + 0.55vw), $fs-400);
