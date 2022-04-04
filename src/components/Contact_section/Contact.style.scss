@@ -1,0 +1,87 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.contact {
+  background-color: $fancy-grey-color;
+  color: $fancy-black-color-medium;
+}
+.contact-section {
+  padding-block: 10rem;
+  display: grid;
+  grid-template-columns: 0.45fr 0.4fr;
+  column-gap: $gap-size-3;
+  justify-content: center;
+  text-overflow: ellipsis;
+}
+.contact-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-size-2;
+  padding-right: 4rem;
+}
+textarea {
+  height: 12.5rem;
+  resize: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: $white;
+}
+label {
+  margin: 0.88rem 0;
+  font-weight: $fw-600;
+}
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: $white;
+}
+input,
+textarea {
+  color: $fancy-red-color;
+}
+li {
+  position: relative;
+}
+.form-error {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: $fs-200;
+  color: $fancy-red-color;
+}
+.contact-section__form button {
+  margin-top: 1rem;
+}
+.contact-section__form-items li {
+  display: flex;
+  flex-direction: column;
+  font-weight: $fw-700;
+}
+.contact-section__links {
+  display: flex;
+  gap: $gap-size-1;
+  margin-bottom: 1rem;
+}
+.contact-section__links img {
+  max-width: 2.5rem;
+  transition: all 0.3s;
+}
+.contact-section__links img:hover {
+  transform: scale(120%);
+}
+@media only screen and (max-width: 904px) {
+  .contact-section__content-img {
+    max-width: calc(75% - 1rem);
+    height: auto;
+    order: -1;
+    align-self: center;
+  }
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  .contact-section__content {
+    padding: 0;
+  }
+}
