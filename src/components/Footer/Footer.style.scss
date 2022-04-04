@@ -1,0 +1,28 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.footer-section {
+  background-color: $fancy-red-color;
+  padding-block: 5rem;
+}
+.footer-section__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: $fancy-black-color;
+}
+.footer-section__content {
+  max-width: 500px;
+
+  h2 {
+    box-shadow: -5px 5px $fancy-black-color;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $white;
+  }
+}
+.footer-section__links {
+  display: flex;
+  gap: 1rem;
+}
