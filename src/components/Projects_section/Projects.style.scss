@@ -1,0 +1,33 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.projects-section {
+  padding-block: 10rem;
+  color: $fancy-black-color-medium;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+.projects-section__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $gap-size-3;
+}
+.projects-section__items {
+  max-width: 31.25rem;
+  @include flex-4;
+  gap: $gap-size-1;
+  justify-self: center;
+  position: relative;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+}
+.projects-section__content {
+  padding: 0.7rem 1rem;
+  @include flex-4;
+  gap: $gap-size-1;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
