@@ -18,6 +18,64 @@
     <title>Felipe Miranda Marreiros</title>
   </head>
   <body>
+    <form
+      className="contact-section__form"
+      method="POST"
+      name="contact"
+      netlify
+      data-netlify="true"
+      action="/"
+      hidden
+    >
+    <input type="hidden" name="form-name" value="contact-form">
+    
+      <ul className="contact-section__form-items">
+        <li>
+          <p className="form-error">{formErrors.nome}</p>
+          <label htmlFor="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            onChange="{handleChange}"
+            name="nome"
+            value="{formValues.nome}"
+          />
+        </li>
+        <li>
+          <p className="form-error">{formErrors.email}</p>
+          <label htmlFor="mail">E-mail</label>
+          <input
+            type="email"
+            id="mail"
+            onChange="{handleChange}"
+            name="email"
+            value="{formValues.email}"
+          />
+        </li>
+        <li>
+          <p className="form-error">{formErrors.assunto}</p>
+          <label htmlFor="subject">Assunto</label>
+          <input
+            type="text"
+            id="subject"
+            onChange="{handleChange}"
+            name="assunto"
+            value="{formValues.assunto}"
+          />
+        </li>
+        <li>
+          <p className="form-error">{formErrors.mensagem}</p>
+          <label htmlFor="msg">Mensagem</label>
+          <textarea
+            id="msg"
+            onChange="{handleChange}"
+            name="mensagem"
+            value="{formValues.mensagem}"
+          ></textarea>
+        </li>
+      </ul>
+      <button type="submit" className="btn" title="Enviar">Enviar</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
