@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.projects-section__skills {
+  display: flex;
+  gap: 0.3rem;
+  border-radius: 2px;
+}
+.projects-section__skills-img {
+  width: 40px;
+  height: 35px;
+}
