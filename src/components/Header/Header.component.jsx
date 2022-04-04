@@ -17,7 +17,7 @@ const Header = () => {
               presentes aqui, bem como minha formação e o que estou estudando
               atualmente.
             </p>
-            <button className="hero-btn">Saiba Mais</button>
+            <a href="#Projetos" className="hero-btn">Saiba Mais</a>
           </section>
           <div className="hero__content-img">
             <img
