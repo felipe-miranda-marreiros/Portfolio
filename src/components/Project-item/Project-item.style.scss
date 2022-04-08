@@ -1,0 +1,35 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.projects-section__items {
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 8%);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
+}
+.projects-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.projects-section-img__container {
+  flex: 1;
+}
+.projects-section-img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  display: block;
+  object-fit: cover;
+}
+.projects-section__content-description {
+  font-size: 15px;
+}

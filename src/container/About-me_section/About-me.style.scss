@@ -2,15 +2,19 @@
 @import "../../sass/mixins";
 
 .about-me-section {
-  padding-block: 10rem;
+  padding-block: 8.5rem;
   color: $fancy-black-color-medium;
   text-overflow: ellipsis;
+  text-align: justify;
+  background-color: $white;
 }
 .about-me-section__content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
+  border-radius: 5px;
+  padding-block: 4rem;
 }
 .about-me-section__content-text {
   flex: 0 0 50%;
@@ -21,6 +25,7 @@
 }
 .about-me-section__content-text--title {
   margin-bottom: 1rem;
+  color: $fancy-red-color;
 }
 .about-me-section__content-img {
   border: 5px solid $fancy-red-color;
@@ -32,6 +37,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding-inline: 2rem;
   }
   .about-me-section__content-text {
     text-align: justify;

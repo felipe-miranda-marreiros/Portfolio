@@ -2,13 +2,20 @@
 @import "../../sass/mixins";
 
 .hero {
-  padding-block: 5rem;
+  padding-block: 10rem;
+  margin-top: 5rem;
   @include flex-1;
-  background-color: $fancy-black-color;
-  margin-top: 3rem;
+  color: $fancy-black-color;
+  background-color: #f5f5f5;
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 10rem;
+  }
+  @media only screen and (max-width: 375px) {
+    padding-top: 4rem;
+  }
 }
 .hero__content {
-  text-overflow: ellipsis;
   @include flex;
   position: relative;
 }
@@ -35,12 +42,15 @@
 .hero__content-text--title {
   margin-top: 1.7rem;
   font-size: $fs-700;
-  line-height: 1.3;
+  line-height: 1.1;
+  max-width: 30rem;
+
   @media only screen and (max-width: 820px) {
     font-size: clamp(2rem, calc(3rem + 1vw), 3rem);
   }
   @media only screen and (max-width: 480px) {
     font-size: clamp(2rem, calc(3rem + 1vw), 2rem);
+    margin-top: 1.7rem;
   }
 }
 .hero__content-img {
@@ -51,20 +61,9 @@
 }
 .hero-btn {
   border: none;
-  padding: 1rem;
+  font-weight: $fw-500;
   max-width: fit-content;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-  text-transform: uppercase;
-  font-size: $fs-300;
-  letter-spacing: 0.03em;
-  background-color: $fancy-black-color;
-  outline: 3px solid $fancy-red-color;
-  font-weight: 700;
-}
-.hero-btn:hover {
-  background-color: $fancy-red-color;
-  color: $fancy-black-color;
+  padding: 0.6rem 0.9rem;
 }
 @media only screen and (max-width: 904px) {
   .hero__content {

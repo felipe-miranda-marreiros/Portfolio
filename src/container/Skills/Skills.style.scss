@@ -3,8 +3,8 @@
 
 .skills-section {
   padding-block: 5rem;
-  background-color: $fancy-black-color;
   text-overflow: ellipsis;
+  color: $fancy-black-color-medium;
 }
 .skills-section__content {
   display: flex;
@@ -19,9 +19,9 @@
   }
   h3 {
     margin-bottom: 1rem;
+    color: $fancy-red-color;
   }
 }
-
 .skills-section__items {
   display: grid;
   grid-template-columns: repeat(7, 1fr);

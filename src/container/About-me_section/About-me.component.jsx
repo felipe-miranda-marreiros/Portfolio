@@ -3,8 +3,8 @@ import portfolioAuthor from "../../assets/imgs/profile/felipe-miranda-marreiros.
 
 const AboutMe = () => {
   return (
-    <div className="about-me-section container" id="Sobre Mim">
-      <section className="about-me-section__content">
+    <div className="about-me-section" id="Sobre Mim">
+      <section className="about-me-section__content container">
         <div>
           <img
             src={portfolioAuthor}
@@ -16,8 +16,8 @@ const AboutMe = () => {
           <h2 className="about-me-section__content-text--title">Sobre Mim</h2>
           <p>
             Meu nome é Felipe Miranda Marreiros, tenho 24 anos e sou formado em
-            Gestão de Recursos Humanos pelo Instituto Federal de Ciência e
-            Tecnologia do Amapá.
+            Gestão de Recursos Humanos pelo Instituto Federal de Educação,
+            Ciência e Tecnologia do Amapá.
           </p>
           <p>
             Comecei estudar programação em outubro de 2021 e hoje faço parte do
