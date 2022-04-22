@@ -18,45 +18,6 @@ const Skills = () => {
               tecnologias abaixo, estou estudando Algoritmos e Estrutura de
               Dados.
             </p>
-            <p>
-              Quer ver minha evolução com HTML, CSS e JavaScript? Clique nos
-              icones abaixo.
-            </p>
-            <div>
-              <a
-                href="https://github.com/felipe-miranda-marreiros/HTML"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <img
-                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
-                  alt="HTML"
-                  className="projects-section__skills-img"
-                />
-              </a>
-              <a
-                href="https://github.com/felipe-miranda-marreiros/CSS"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <img
-                  src="https://img.icons8.com/color/480/000000/css3.png"
-                  alt="HTML"
-                  className="projects-section__skills-img"
-                />
-              </a>
-              <a
-                href="https://github.com/felipe-miranda-marreiros/JavaScript"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <img
-                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
-                  alt="HTML"
-                  className="projects-section__skills-img"
-                />
-              </a>
-            </div>
             <section>
               <h3>O futuro</h3>
               <p>

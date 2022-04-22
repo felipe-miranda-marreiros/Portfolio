@@ -8,6 +8,7 @@ import Skills from "./container/Skills/Skills.component";
 import Projects from "./container/Projects_section/Projects.component";
 import Contact from "./container/Contact_section/Contact.component";
 import Footer from "./container/Footer/Footer.component";
+import Courses from "./container/Courses/Courses.component";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <main>
         <AboutMe />
         <Skills />
+        <Courses />
         <Projects />
       </main>
       <Contact />
