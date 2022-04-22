@@ -36,3 +36,17 @@ Utilizei Sanity para fazer o meu backend. Ele disponibiliza um CRUD bem intuíti
 Dessa forma podemos utilizar Fetch e extrair informações do servidor personalizado pelo Sanity.
 
 ![image](https://user-images.githubusercontent.com/91689754/162447251-f95bdf15-4f39-4b7f-b1b0-00a6b67f6460.png)
+
+## Guia
+
+Git Clone
+
+```
+https://github.com/felipe-miranda-marreiros/Portfolio.git
+```
+
+Novo ambiente
+
+```
+npm run start
+```
